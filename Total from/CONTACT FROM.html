@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/" method='get'>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="Name"> Name</label></td>
+                    <td><input type="text" name="name" id="name" required></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input type="text" name="Email" id="Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="password" name="Password" id="Password" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Phone"> Phone</label></td>
+                    <td><input type="tel" name="Phone" id="Phone" minlength="10" maxlength="10"></td>
+                </tr>
+                
+                <tr>
+                    <td> <label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" id='male'>Male
+                        <input type="radio" name="gender" id='female'>Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="Profession">Profession</label></td>
+                    <td>
+                        <select name="Profession" id="Profession">
+                            <option value="Govt">Govt. off.</option>
+                            <option value="Govt">Pvt. Company</option>
+                            <option value="Govt">Self Emploayed</option>
+                            <option value="Govt">Student</option>
+                            <option value="Govt">Other</option>
+                       Profession </select>
+                    </td>
+                </tr>
+                <tr style="vertical-align:top;">
+                    <td><label for="Message">Message</label></td>
+                    <td><textarea name="Message" id="Message" cols="40" rows="6" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="tnc" id="tnc" required>
+                        <label for="tnc"> I accept the term and conditions</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="reset">reset</button>
+                    </td>
+                    <td style="text-align:right;"><button type="submit">submit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
